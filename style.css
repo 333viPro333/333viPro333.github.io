@@ -13,3 +13,8 @@ body {
     font-size: 50px;
     border-radius: 100px;
 }
+
+p {
+    color: blanchedalmond;
+    line-height: 1px;
+}
