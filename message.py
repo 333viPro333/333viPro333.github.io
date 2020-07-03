@@ -66,7 +66,8 @@ def menu_rh():
         elif enter == "3":
             my_message_rh()
         elif enter == "0":
-            menu_os()
+            os.system("clear")
+            exit()
         else:
             print("ПОМИЛКОВЕ ВВЕДЕННЯ", '"' + enter + '"')
 
