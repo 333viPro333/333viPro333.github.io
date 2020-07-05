@@ -1,4 +1,4 @@
-body {
+body{
     text-align: center;
     background-color: #1E1B1C;
 }
@@ -21,6 +21,30 @@ nav a{
 
 nav a:hover{
     color: black;
+}
+
+#code {
+    position: absolute;
+    left:300px ;
+}
+
+#download{
+    position: relative;
+    left: 30px;
+}
+
+#exit{
+    position: relative;
+    left: 200px;
+}
+
+section {
+    background-color: blueviolet;
+    border: 5px solid rgb(206, 179, 255);
+}
+
+section img {
+    height: 300px;
 }
 
 footer a img{
