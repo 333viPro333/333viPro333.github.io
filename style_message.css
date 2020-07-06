@@ -13,10 +13,7 @@ section img{
     width: 50%;
     height: auto;
 }
-/* header h1{
-    font-size: 100px;
-    color: rgb(173, 86, 255);
-} */
+
 
 nav {
     background-color: blueviolet;
@@ -49,7 +46,8 @@ section {
 }
 
 section img {
-    height: 200px;
+    height: auto;
+    width: auto;
 }
 
 footer a img{
