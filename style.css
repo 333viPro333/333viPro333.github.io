@@ -3,6 +3,11 @@ body {
     background-color: #1E1B1C;
 }
 
+header img{
+    width: 50%;
+    height: auto;
+}
+
 nav {
     background-color: blueviolet;
     font-size: 30px;
@@ -24,7 +29,8 @@ nav a:hover{
 }
 
 footer a img{
-    height: 50px;
+    width: 4%;
+    height: auto;
 }
 
 footer h3{
