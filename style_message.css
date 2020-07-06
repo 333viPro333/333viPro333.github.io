@@ -23,20 +23,7 @@ nav a:hover{
     color: black;
 }
 
-#code {
-    position: absolute;
-    left:300px ;
-}
 
-#download{
-    position: relative;
-    left: 30px;
-}
-
-#exit{
-    position: relative;
-    left: 200px;
-}
 
 section {
     background-color: blueviolet;
