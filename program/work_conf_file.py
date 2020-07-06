@@ -13,4 +13,3 @@ def find(conf_file, index):
     with open(conf_file, "r") as ftp:
        position = ftp.readlines()[int(index)].strip()
        print(position)
-
