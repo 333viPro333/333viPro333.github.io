@@ -10,7 +10,7 @@ header img{
 }
 
 section img{
-    width: 30%;
+    width: 50%;
     height: auto;
 }
 /* header h1{
@@ -34,6 +34,9 @@ nav a{
     color: rgb(206, 179, 255);
     text-decoration: none;
     font-size: 2vw;
+}
+nav p{
+    line-height: 1px;
 }
 
 nav a:hover{

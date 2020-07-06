@@ -26,6 +26,10 @@ nav a{
     font-size: 2vw;
 }
 
+nav p{
+    line-height: 1px;
+}
+
 nav a:hover{
     color: black;
 }
