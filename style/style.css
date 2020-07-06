@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    background-color: #1E1B1C;
+}
+
+header img{
+    width: 50%;
+    height: auto;
+}
+
+nav {
+    background-color: blueviolet;
+    font-size: 30px;
+    border: 5px solid rgb(206, 179, 255);
+    border-radius: 50px;
+    
+}
+
+nav h1{
+    font-size: 5vw;
+    color: rgb(206, 179, 255);
+}
+
+nav a{
+    color: rgb(206, 179, 255);
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+nav p{
+    line-height: 1px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+footer a img{
+    width: 4%;
+    height: auto;
+}
+
+footer h3{
+    font-size: 1vw;
+    color: rgba(140, 131, 148, 0.596);
+}
