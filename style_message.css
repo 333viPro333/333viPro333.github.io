@@ -27,12 +27,13 @@ nav {
 
 nav h1{
     color: rgb(206, 179, 255);
-    font-size: 60px;
+    font-size: 5vw;
 }
 
 nav a{
     color: rgb(206, 179, 255);
     text-decoration: none;
+    font-size: 2vw;
 }
 
 nav a:hover{
@@ -54,5 +55,6 @@ footer a img{
 }
 
 footer h3{
+    font-size: 1vw;
     color: rgba(140, 131, 148, 0.596);
 }
