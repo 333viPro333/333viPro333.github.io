@@ -48,8 +48,8 @@ section {
 }
 
 section img {
-    height: auto;
-    width: auto;
+    height: 50%;
+    width: 50%;
 }
 
 footer a img{
