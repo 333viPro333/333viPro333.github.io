@@ -43,6 +43,7 @@ def conf():
                     change("/etc/vsftpd/vsftpd.conf", 11, "anonymous_enable=YES")
                 else:
                     print("Не вірне значення")
+                system("systemctl restart vsftpd")
 
             elif enter == "2":
                 en = input("--------Підключення--------\n"
@@ -54,6 +55,7 @@ def conf():
                     change("/etc/vsftpd/vsftpd.conf", 18, "write_enable=NO")
                 else:
                     print("Не вірне значення")
+                system("systemctl restart vsftpd")
 
         else:
             install()
