@@ -32,8 +32,11 @@ def conf():
             else:
                 print("2 - Записування: Заборонено")
 
-            enter = input("0 - Вихід в меню\n"
-                          ": ")
+            print("3 - Вимкнути/Увімкнути FTP\n"
+                  "0 - Вихід в меню")
+            system("systemctl status vsftpd | grep -w Active")
+
+            enter = input(": ")
             if enter == "1":
                 en = input("--------Підключення--------\n"
                            "a - Анонімне, u - Авторизоване\n"
@@ -57,6 +60,16 @@ def conf():
                 else:
                     print("Не вірне значення")
                 system("systemctl restart vsftpd")
+
+            elif enter == "3":
+                en = input("on - Увімкнути, off - Вимкнути\n"
+                           ": ")
+
+                if en == "on":
+                    system("systemctl start vsftpd")
+                elif en == "off":
+                    system("systemctl stop vsftpd")
+
             elif enter == "0":
                 menu()
 
@@ -85,7 +98,7 @@ def menu():
                       "1 - Встановити FTP\n"
                       "2 - Налаштування\n"
                       "3 - Видалити\n"
-                      "0 - Вийти\n"
+                      "0 - Вихід\n"
                       "------------------------\n"
                       ": ")
 
