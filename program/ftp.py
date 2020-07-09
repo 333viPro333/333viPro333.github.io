@@ -37,9 +37,9 @@ def conf():
                 en = input("--------Підключення--------\n"
                            "a - Анонімне, u - Авторизоване\n"
                            ": ")
-                if en == "a":
+                if en == "u":
                     change("/etc/vsftpd/vsftpd.conf", 11, "anonymous_enable=NO")
-                elif en == "u":
+                elif en == "a":
                     change("/etc/vsftpd/vsftpd.conf", 11, "anonymous_enable=YES")
                 else:
                     print("Не вірне значення")
