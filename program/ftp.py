@@ -57,6 +57,11 @@ def conf():
                 else:
                     print("Не вірне значення")
                 system("systemctl restart vsftpd")
+            elif enter == "0":
+                menu()
+
+            else:
+                print("")
 
         else:
             install()
