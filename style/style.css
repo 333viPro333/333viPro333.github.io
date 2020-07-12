@@ -8,6 +8,17 @@ header img{
     height: auto;
 }
 
+#centos {
+    width: 6%;
+    height: auto;
+    border-radius: 50px;
+}
+
+#python {
+    width: 6%;
+    height: auto;
+}
+
 nav {
     background-color: blueviolet;
     font-size: 30px;
