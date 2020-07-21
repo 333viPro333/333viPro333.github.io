@@ -32,9 +32,13 @@ def conf():
             else:
                 print("2 - Записування: Заборонено")
 
-            print("3 - Вимкнути/Увімкнути FTP\n"
-                  "0 - Вихід в меню")
+            print("3 - Вимкнути/Увімкнути FTP")
             system("systemctl status vsftpd | grep -w Active")
+
+            print("4 - Вимкунти/Увімкнути Брандмауер")
+            system("systemctl status firewalld | grep -w Active")
+
+            print("0 - Вихід в меню")
 
             enter = input(": ")
             if enter == "1":
@@ -70,6 +74,15 @@ def conf():
                 elif en == "off":
                     system("systemctl stop vsftpd")
 
+            elif enter == "4":
+                en = input("on - Увімкнути, off - Вимкнути\n"
+                           ": ")
+
+                if en == "on":
+                    system("systemctl start firewalld")
+                elif en == "off":
+                    system("systemctl stop firewalld")
+
             elif enter == "0":
                 menu()
 
@@ -98,7 +111,8 @@ def menu():
         enter = input("--------MЕНЮ FTP--------\n"
                       "1 - Встановити FTP\n"
                       "2 - Налаштування\n"
-                      "3 - Видалити\n"
+                      "3 - IP\n"
+                      "4 - Видалити\n"
                       "0 - Вихід\n"
                       "------------------------\n"
                       ": ")
@@ -108,6 +122,10 @@ def menu():
         elif enter == "2":
             conf()
         elif enter == "3":
+            system("clear")
+            system("ip a | grep -w 'inet'")
+            input("Натисніть \"ENTER\"")
+        elif enter == "4":
             dell()
         elif enter == "0":
             system("clear")
