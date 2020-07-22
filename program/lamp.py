@@ -6,7 +6,7 @@ def menu():
         enter = input("-------МЕНЮ--------\n"
                       "1 - Встановити LAMP\n"
                       "2 - Налаштування БД\n"
-                      "0 - Вмйти\n"
+                      "0 - Вийти\n"
                       ": ")
         if enter == "1":
            install()
@@ -25,7 +25,9 @@ def install():
               "sudo yum install mysql-server;"
               "sudo systemctl start mysqld;"
               "sudo yum install php php-mysql;"
-              "sudo systemctl restart httpd.service")
+              "sudo systemctl restart httpd.service;"
+              "yum -y install epel-release;"
+              "yum -y install phpmyadmin")
 
 def conf():
     os.system("grep 'temporary password' /var/log/mysqld.log")
