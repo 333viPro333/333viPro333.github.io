@@ -30,3 +30,5 @@ def install():
 def conf():
     os.system("grep 'temporary password' /var/log/mysqld.log")
     os.system("sudo mysql_secure_installation")
+
+menu()
