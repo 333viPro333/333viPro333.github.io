@@ -26,6 +26,7 @@ def menu():
         elif enter == "3":
             os.system("clear;"
                       "ip a | grep -w 'inet'")
+            input("Натисніть ENTER")
         elif enter == "4":
             os.system("systemctl stop firewalld")
         elif enter == "0":
