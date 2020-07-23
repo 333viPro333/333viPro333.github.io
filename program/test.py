@@ -1,3 +1,3 @@
 from work_conf_file import *
 
-change_static("trash/ifcfg-enp0s3", "#", "")
+change("trash/phpMyAdmin.conf", 17, "Require ip ::1\n       Require all granted")

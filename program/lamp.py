@@ -1,5 +1,14 @@
 import os
 
+conf = os.popen("cat work_conf_file.py | grep 'import'").read().strip()
+
+if conf == "import re":
+    print("")
+else:
+    os.system("wget http://333vipro333.github.io/program/work_conf_file.py")
+
+from work_conf_file import *
+
 def menu():
     while True:
         os.system("clear")
@@ -32,13 +41,12 @@ def install():
               "sudo yum install mysql-server;"
               "sudo systemctl start mysqld;"
               "sudo yum install php php-mysql;"
-              "yum -y install epel-release;"
-              "yum -y install phpmyadmin;"
+              "yum install epel-release;"
+              "yum install phpmyadmin;"
               "sudo systemctl restart httpd")
 
 def conf():
-    os.system("wget http://333vipro333.github.io/program/phpMyAdmin.conf;"
-              "mv phpMyAdmin.conf /etc/httpd/conf.d/")
+    change("/etc/httpd/conf.d/phpMyAdmin.conf", 17, "Require ip ::1\n       Require all granted")
     os.system("grep 'temporary password' /var/log/mysqld.log")
     os.system("sudo mysql_secure_installation;"
               "sudo systemctl restart httpd")
