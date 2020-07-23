@@ -34,13 +34,13 @@ def install():
               "sudo yum install php php-mysql;"
               "yum -y install epel-release;"
               "yum -y install phpmyadmin;"
-              "sudo systemctl restart httpd.service")
+              "sudo systemctl restart httpd")
 
 def conf():
-    os.system("wget http://333vipro333.github.io/program/phpMyAdmin.conf"
+    os.system("wget http://333vipro333.github.io/program/phpMyAdmin.conf;"
               "mv phpMyAdmin.conf /etc/httpd/conf.d/")
     os.system("grep 'temporary password' /var/log/mysqld.log")
-    os.system("sudo mysql_secure_installation"
-              "sudo systemctl restart httpd.service")
+    os.system("sudo mysql_secure_installation;"
+              "sudo systemctl restart httpd")
 
 menu()
