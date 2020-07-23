@@ -30,6 +30,7 @@ def menu():
         elif enter == "4":
             os.system("systemctl stop firewalld")
         elif enter == "0":
+            os.system("clear")
             exit()
         else:
             print("")
