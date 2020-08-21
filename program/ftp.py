@@ -125,7 +125,7 @@ def menu():
             conf()
         elif enter == "3":
             system("clear")
-            system("ip a | grep -w 'inet'")
+            system('ip a | tail -4 | grep -w inet | cut -d" " -f6')
             input("Натисніть \"ENTER\"")
         elif enter == "4":
             dell()
